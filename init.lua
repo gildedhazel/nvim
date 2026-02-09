@@ -14,12 +14,12 @@ vim.o.relativenumber = true
 vim.o.mouse = 'a'
 vim.o.showmode = false
 
-vim.lsp.config['yuck'] = {
-  cmd = { 'true' },
-  filetypes = { 'yuck' },
-}
-vim.lsp.enable 'yuck'
-vim.lsp.enable('nixd')
+-- vim.lsp.config['yuck'] = {
+--   cmd = { 'true' },
+--   filetypes = { 'yuck' },
+-- }
+-- vim.lsp.enable 'yuck'
+-- vim.lsp.enable('nixd')
 
 vim.schedule(function()
   vim.o.clipboard = 'unnamedplus'
@@ -353,7 +353,7 @@ require('lazy').setup({
         'isort',
         'black',
         -- 'alejandra',
-        'nixfmt',
+        -- 'nixfmt',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
       require('mason-lspconfig').setup {
