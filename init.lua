@@ -403,7 +403,7 @@ require('lazy').setup({
       formatters_by_ft = {
         lua = { 'stylua' },
         python = { 'isort', 'black' },
-        nix = { 'nixfmt' },
+        -- nix = { 'nixfmt' },
       },
     },
   },
