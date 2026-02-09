@@ -574,9 +574,9 @@ require('lazy').setup({
       -- log_level = 'debug',
     },
   },
-  {
-    'elkowar/yuck.vim',
-  },
+  -- {
+  --   'elkowar/yuck.vim',
+  -- },
 
   {
     'MeanderingProgrammer/render-markdown.nvim',
