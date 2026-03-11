@@ -336,6 +336,7 @@ require('lazy').setup({
       local servers = {
         pyright = {},
         -- rust_analyzer = {},
+        robotcode = {},
         lua_ls = {
           settings = {
             Lua = {
