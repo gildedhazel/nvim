@@ -335,9 +335,9 @@ require('lazy').setup({
       local capabilities = require('blink.cmp').get_lsp_capabilities()
 
       local servers = {
-        -- pyright = {},
+        pyright = {},
         -- rust_analyzer = {},
-        -- robotcode = {},
+        robotcode = {},
         lua_ls = {
           settings = {
             Lua = {
@@ -352,8 +352,8 @@ require('lazy').setup({
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
-        -- 'isort',
-        -- 'black',
+        'isort',
+        'black',
         -- 'alejandra',
         -- 'nixfmt',
       })
@@ -404,7 +404,7 @@ require('lazy').setup({
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
-        -- python = { 'isort', 'black' },
+        python = { 'isort', 'black' },
         -- nix = { 'nixfmt' },
       },
     },
