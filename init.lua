@@ -20,7 +20,7 @@ vim.o.showmode = false
 -- }
 -- vim.lsp.enable 'yuck'
 
--- vim.lsp.enable('nixd')
+vim.lsp.enable('nixd')
 
 vim.schedule(function()
   vim.o.clipboard = 'unnamedplus'
@@ -337,7 +337,7 @@ require('lazy').setup({
       local servers = {
         pyright = {},
         -- rust_analyzer = {},
-        robotcode = {},
+        -- robotcode = {},
         lua_ls = {
           settings = {
             Lua = {
@@ -355,7 +355,7 @@ require('lazy').setup({
         'isort',
         'black',
         -- 'alejandra',
-        -- 'nixfmt',
+        'nixfmt',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
       require('mason-lspconfig').setup {
@@ -405,7 +405,7 @@ require('lazy').setup({
       formatters_by_ft = {
         lua = { 'stylua' },
         python = { 'isort', 'black' },
-        -- nix = { 'nixfmt' },
+        nix = { 'nixfmt' },
       },
     },
   },
@@ -496,8 +496,8 @@ require('lazy').setup({
     main = 'nvim-treesitter.configs', -- Sets main module to use for opts
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
-      -- ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc', 'nix' },
-      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' },
+      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc', 'nix' },
+      -- ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
