@@ -26,9 +26,9 @@ vim.schedule(function()
   vim.o.clipboard = 'unnamedplus'
 end)
 
-vim.o.shiftwidth = 4
+vim.o.shiftwidth = 2
 vim.o.expandtab = true
-vim.o.softtabstop = 4
+vim.o.softtabstop = 2
 vim.o.smarttab = true
 vim.o.breakindent = true
 vim.o.undofile = true
@@ -557,6 +557,10 @@ require('lazy').setup({
   -- {
   --   'elkowar/yuck.vim',
   -- },
+
+  {
+    'szymonwilczek/vim-be-better',
+  },
 
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
